@@ -68,12 +68,6 @@ const server = http.createServer(function(req,res) {
     if (contenttype === "text/html") {
         filePath = "index.html";
     }
-    if (contenttype === "text/css") {
-        filePath = "index.css";
-    }
-    if (contenttype === "text/js") {
-        filePath = "functions.js";
-    }
     if (contenttype === "image/png" || contenttype === "image/jpeg") {
         filePath = req.url.slice(1)
     }
